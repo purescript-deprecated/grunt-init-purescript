@@ -3,6 +3,7 @@
   "version": "{%= version %}",
   "description": "{%= description %}",
   "main": "",
+  "private": true,
   "author": "{%= author_name %}",
   "license": "{%= licenses %}",
   "dependencies": {
