@@ -8,7 +8,6 @@
     "node_modules",
     "output",
     "tests",
-    "output",
     "js",
     "tmp",
     "bower.json",
