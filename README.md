@@ -6,9 +6,9 @@ A `grunt-init` template for creating new PureScript projects.
 
 Clone this repo into `~/.grunt-init/purescript/`, then run with `grunt-init purescript`.
 
-Install Grunt, `grunt-init` and Bower if you haven't already:
+Install Grunt, `grunt-init`, `grunt-cli`, and Bower if you haven't already:
 
-    npm install -g grunt grunt-init bower
+    npm install -g grunt grunt-init grunt-cli bower
  
 Install the PureScript project template for use with `grunt-init`:
 
