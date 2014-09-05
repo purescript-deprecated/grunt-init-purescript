@@ -2,15 +2,15 @@ module.exports = function(grunt) {
 
   "use strict";
 
-  grunt.initConfig({ 
-  
+  grunt.initConfig({
+
     libFiles: [
       "src/**/*.purs",
       "bower_components/purescript-*/src/**/*.purs"
     ],
-    
+
     clean: ["tmp", "output"],
-  
+
     pscMake: {
       lib: {
         src: ["<%=libFiles%>"]
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     },
 
     dotPsci: ["<%=libFiles%>"],
- 
+
     copy: [
       {
         expand: true,
@@ -38,14 +38,14 @@ module.exports = function(grunt) {
       tests: {
         src: "tmp/index.js"
       }
-    }      
+    }
   });
 
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-clean");
-  grunt.loadNpmTasks("grunt-execute")
+  grunt.loadNpmTasks("grunt-execute");
   grunt.loadNpmTasks("grunt-purescript");
- 
+
   grunt.registerTask("test", ["pscMake:tests", "copy", "execute:tests"]);
   grunt.registerTask("make", ["pscMake:lib", "dotPsci"]);
   grunt.registerTask("default", ["clean", "make", "test"]);
