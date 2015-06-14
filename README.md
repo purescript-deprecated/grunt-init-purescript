@@ -1,3 +1,7 @@
+# Warning
+
+This repository is outdated and no longer supported. For getting started with new PureScript projects, try the [`pulp`](https://github.com/bodil/pulp) tool instead.
+
 # grunt-init-purescript
 
 A `grunt-init` template for creating new PureScript projects.
